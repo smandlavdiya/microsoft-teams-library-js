@@ -1,4 +1,4 @@
-import { webStorage } from '@microsoft/teams-js';
+import { webStorage } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput } from './utils';

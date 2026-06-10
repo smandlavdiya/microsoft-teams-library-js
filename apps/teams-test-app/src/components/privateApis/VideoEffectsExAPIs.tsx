@@ -1,4 +1,4 @@
-import { videoEffects, videoEffectsEx } from '@microsoft/teams-js';
+import { videoEffects, videoEffectsEx } from '@jevelin/bridge';
 import React from 'react';
 
 import { generateRegistrationMsg } from '../../App';

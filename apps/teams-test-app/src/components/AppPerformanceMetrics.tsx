@@ -1,4 +1,4 @@
-import { appPerformanceMetrics, HostMemoryMetrics } from '@microsoft/teams-js';
+import { appPerformanceMetrics, HostMemoryMetrics } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput } from './utils';

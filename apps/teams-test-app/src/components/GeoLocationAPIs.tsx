@@ -1,4 +1,4 @@
-import { geoLocation } from '@microsoft/teams-js';
+import { geoLocation } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from './utils';

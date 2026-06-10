@@ -4,7 +4,7 @@ import {
   OpenConversationRequest,
   OpenGroupChatRequest,
   OpenSingleChatRequest,
-} from '@microsoft/teams-js';
+} from '@jevelin/bridge';
 import React from 'react';
 
 import { noHostSdkMsg } from '../../App';

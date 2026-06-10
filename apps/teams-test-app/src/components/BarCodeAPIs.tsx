@@ -1,4 +1,4 @@
-import { barCode } from '@microsoft/teams-js';
+import { barCode } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from './utils';

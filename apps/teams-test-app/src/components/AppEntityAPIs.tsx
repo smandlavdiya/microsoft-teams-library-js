@@ -1,4 +1,4 @@
-import { app, appEntity, SdkError } from '@microsoft/teams-js';
+import { app, appEntity, SdkError } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from './utils';

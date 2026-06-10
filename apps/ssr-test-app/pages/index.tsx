@@ -1,4 +1,4 @@
-import * as microsoftTeams from '@microsoft/teams-js';
+import * as JevelinBridge from '@jevelin/bridge';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import React, { ReactElement, useEffect, useState } from 'react';
@@ -17,11 +17,11 @@ export default function IndexPage(props: SSRProps): ReactElement {
   const [clientTime, setClientTime] = useState('');
 
   useEffect(() => {
-    microsoftTeams.app.initialize().then(() => {
-      microsoftTeams.app.getContext().then((ctx) => {
+    JevelinBridge.app.initialize().then(() => {
+      JevelinBridge.app.getContext().then((ctx) => {
         setTeamsContext(ctx);
       });
-      microsoftTeams.app.notifySuccess();
+      JevelinBridge.app.notifySuccess();
       setClientTime(JSON.stringify(new Date()));
     });
   }, []);

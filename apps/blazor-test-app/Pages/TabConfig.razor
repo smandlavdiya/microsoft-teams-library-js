@@ -1,5 +1,5 @@
 @page "/config"
-@inject MicrosoftTeams MicrosoftTeams;
+@inject JevelinBridge JevelinBridge;
 @inject NavigationManager NavigationManager;
 
 <div class="config page" id ="tab config">
@@ -26,8 +26,8 @@
                 WebsiteUrl = $"{NavigationManager.BaseUri}/tab"
             };
 
-            await MicrosoftTeams.InitializeAsync();
-            await MicrosoftTeams.RegisterOnSaveHandlerAsync(settings);
+            await JevelinBridge.InitializeAsync();
+            await JevelinBridge.RegisterOnSaveHandlerAsync(settings);
         }
     }
 }

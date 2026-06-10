@@ -1,4 +1,4 @@
-import { calendar } from '@microsoft/teams-js';
+import { calendar } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from './utils';

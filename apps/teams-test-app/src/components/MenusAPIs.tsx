@@ -1,4 +1,4 @@
-import { menus } from '@microsoft/teams-js';
+import { menus } from '@jevelin/bridge';
 import React from 'react';
 import { ReactElement } from 'react';
 

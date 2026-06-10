@@ -1,4 +1,4 @@
-import { appInstallDialog } from '@microsoft/teams-js';
+import { appInstallDialog } from '@jevelin/bridge';
 import React from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from './utils';

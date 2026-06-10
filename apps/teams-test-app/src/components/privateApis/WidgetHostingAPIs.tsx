@@ -1,4 +1,4 @@
-import { DisplayMode, IModalOptions, IToolInput, JSONValue, widgetHosting } from '@microsoft/teams-js';
+import { DisplayMode, IModalOptions, IToolInput, JSONValue, widgetHosting } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { generateRegistrationMsg } from '../../App';

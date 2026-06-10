@@ -1,4 +1,4 @@
-import { media, SdkError } from '@microsoft/teams-js';
+import { media, SdkError } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { noHostSdkMsg } from '../App';

@@ -1,4 +1,4 @@
-import { app, appInitialization } from '@microsoft/teams-js';
+import { app, appInitialization } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from './utils';

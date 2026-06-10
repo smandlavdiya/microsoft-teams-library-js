@@ -1,4 +1,4 @@
-import { IAppWindow } from '@microsoft/teams-js';
+import { IAppWindow } from '@jevelin/bridge';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 
 import AppAPIs from '../components/AppAPIs';

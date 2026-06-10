@@ -5,7 +5,7 @@ const { SubresourceIntegrityPlugin } = require('webpack-subresource-integrity');
 const { readFileSync } = require('fs');
 const { join } = require('path');
 const WebpackAssetsManifest = require('webpack-assets-manifest');
-const libraryName = 'microsoftTeams';
+const libraryName = 'JevelinBridge';
 const { expect } = require('expect');
 const path = require('path');
 const { DefinePlugin } = require('webpack');
@@ -15,8 +15,8 @@ const { ProvidePlugin } = require('webpack');
 
 module.exports = {
   entry: {
-    MicrosoftTeams: './src/index.ts',
-    'MicrosoftTeams.min': './src/index.ts',
+    JevelinBridge: './src/index.ts',
+    'JevelinBridge.min': './src/index.ts',
   },
   output: {
     filename: '[name].js',
@@ -83,15 +83,15 @@ module.exports = {
     new WebpackAssetsManifest({
       integrity: true,
       integrityHashes: ['sha384'],
-      output: 'MicrosoftTeams-manifest.json',
+      output: 'JevelinBridge-manifest.json',
     }),
 
     {
       apply: (compiler) => {
         compiler.hooks.done.tap('wsi-test', () => {
-          const manifest = JSON.parse(readFileSync(join(__dirname, 'dist/umd/MicrosoftTeams-manifest.json'), 'utf-8'));
+          const manifest = JSON.parse(readFileSync(join(__dirname, 'dist/umd/JevelinBridge-manifest.json'), 'utf-8'));
           // If for some reason hash was not generated for the assets, this test will fail in build.
-          expect(manifest['MicrosoftTeams.min.js'].integrity).toMatch(/sha384-.*/);
+          expect(manifest['JevelinBridge.min.js'].integrity).toMatch(/sha384-.*/);
         });
       },
     },
@@ -101,8 +101,8 @@ module.exports = {
         onEnd: {
           copy: [
             {
-              source: './dist/umd/MicrosoftTeams.min.js',
-              destination: '../../apps/blazor-test-app/wwwroot/js/MicrosoftTeams.min.js',
+              source: './dist/umd/JevelinBridge.min.js',
+              destination: '../../apps/blazor-test-app/wwwroot/js/JevelinBridge.min.js',
             },
           ],
         },

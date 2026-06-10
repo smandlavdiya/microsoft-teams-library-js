@@ -1,4 +1,4 @@
-import { copilot, sidePanelInterfaces, UUID } from '@microsoft/teams-js';
+import { copilot, sidePanelInterfaces, UUID } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { generateRegistrationMsg } from '../../App';

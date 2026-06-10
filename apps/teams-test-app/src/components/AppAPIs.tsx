@@ -6,7 +6,7 @@ import {
   HostToAppPerformanceMetrics,
   registerOnThemeChangeHandler,
   ResumeContext,
-} from '@microsoft/teams-js';
+} from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 import { useNavigate } from 'react-router-dom';
 

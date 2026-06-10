@@ -1,4 +1,4 @@
-import { AppId, otherAppStateChange } from '@microsoft/teams-js';
+import { AppId, otherAppStateChange } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput } from './utils';

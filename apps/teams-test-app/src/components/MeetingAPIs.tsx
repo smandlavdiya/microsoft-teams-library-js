@@ -1,4 +1,4 @@
-import { meeting, SdkError } from '@microsoft/teams-js';
+import { meeting, SdkError } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { generateRegistrationMsg } from '../App';

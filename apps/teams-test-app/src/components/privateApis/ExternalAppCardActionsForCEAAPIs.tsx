@@ -1,4 +1,4 @@
-import { AppId, externalAppCardActions, externalAppCardActionsForCEA } from '@microsoft/teams-js';
+import { AppId, externalAppCardActions, externalAppCardActionsForCEA } from '@jevelin/bridge';
 import React from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from '../utils';

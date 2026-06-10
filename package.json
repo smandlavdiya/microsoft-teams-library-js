@@ -19,8 +19,8 @@
     "clean": "lerna run clean --stream",
     "clean:full": "pnpm clean && pnpm clean:modules",
     "clean:modules": "lerna clean -y && rimraf node_modules",
-    "docs": "pnpm --filter @microsoft/teams-js docs",
-    "docs:validate": "pnpm --filter @microsoft/teams-js docs:validate",
+    "docs": "pnpm --filter @jevelin/bridge docs",
+    "docs:validate": "pnpm --filter @jevelin/bridge docs:validate",
     "lint": "lerna run lint",
     "setup-ssr-app-cert": "node tools/cli/setupSSRCerts.js",
     "size": "lerna run size",
@@ -197,5 +197,6 @@
     "Any time you increase the size-limit of the build, be sure to include an explanation of why it is necessary in the PR description.",
     "If you run into any problems or have questions, reach out to [Noah Darveau](noahdarveau-MSFT@microsoft.com) or file an issue on the [Teams-JS github page](https://github.com/OfficeDev/microsoft-teams-library-js).",
     "The second configration is there as a simple and easy way to determine the size of the entire library."
-  ]
+  ],
+  "packageManager": "pnpm@9.15.9+sha512.68046141893c66fad01c079231128e9afb89ef87e2691d69e4d40eee228988295fd4682181bae55b58418c3a253bde65a505ec7c5f9403ece5cc3cd37dcf2531"
 }

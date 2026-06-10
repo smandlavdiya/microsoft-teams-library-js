@@ -2,11 +2,11 @@
 
 namespace Blazor_Test_App.Interop.TeamsSDK;
 
-public class MicrosoftTeams : InteropModuleBase
+public class JevelinBridge : InteropModuleBase
 {
     protected override string ModulePath => "./js/TeamsJsBlazorInterop.js";
 
-    public MicrosoftTeams(IJSRuntime jsRuntime) : base(jsRuntime) { }
+    public JevelinBridge(IJSRuntime jsRuntime) : base(jsRuntime) { }
 
     public Task InitializeAsync()
     {

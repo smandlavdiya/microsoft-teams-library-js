@@ -1,4 +1,4 @@
-import { plugins } from '@microsoft/teams-js';
+import { plugins } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { generateRegistrationMsg } from '../../App';

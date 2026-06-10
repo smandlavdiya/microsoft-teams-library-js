@@ -6,7 +6,7 @@ import {
   uploadCustomApp,
   UserSettingTypes,
   ViewerActionTypes,
-} from '@microsoft/teams-js';
+} from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { noHostSdkMsg } from '../../App';

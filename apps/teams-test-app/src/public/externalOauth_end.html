@@ -2,8 +2,7 @@
   <head>
     <script
       type="text/javascript"
-      src="
-    https://res.cdn.office.net/teams-js/2.21.0/js/MicrosoftTeams.min.js"
+      src="JevelinBridge.min.js"
     ></script>
     <h2 style="font-size: 40px">Starting mock external oauth2</h2>
     <script>
@@ -17,22 +16,22 @@
       const titleId = params.get('titleId');
 
       async function callteamsJS() {
-        if (microsoftTeams) {
-          appendLog('successfully loaded microsoftTeams');
+        if (JevelinBridge) {
+          appendLog('successfully loaded JevelinBridge');
           try {
-            await microsoftTeams.app.initialize();
+            await JevelinBridge.app.initialize();
             if (titleId === 'testOauthFailureTitleId') {
-              microsoftTeams.authentication.notifyFailure('Failed');
+              JevelinBridge.authentication.notifyFailure('Failed');
               appendLog('notifyFailure sent');
             } else {
-              microsoftTeams.authentication.notifySuccess('Success');
+              JevelinBridge.authentication.notifySuccess('Success');
               appendLog('notifySuccess sent');
             }
           } catch (e) {
-            appendLog('Error calling teams js: ' + e);
+            appendLog('Error calling JevelinBridge: ' + e);
           }
         } else {
-          appendLog('no microsoftTeams');
+          appendLog('no JevelinBridge');
         }
       }
     </script>

@@ -12,6 +12,6 @@ module.exports = merge(commonConfig, {
   },
   plugins: [new HtmlWebPackPlugin({ template: './index_local.html', filename: 'index.html' })],
   externals: {
-    '@microsoft/teams-js': 'microsoftTeams',
+    '@jevelin/bridge': 'JevelinBridge',
   },
 });

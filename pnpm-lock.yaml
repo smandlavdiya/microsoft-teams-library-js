@@ -280,7 +280,7 @@ importers:
 
   apps/blazor-test-app:
     devDependencies:
-      '@microsoft/teams-js':
+      '@jevelin/bridge':
         specifier: workspace:*
         version: link:../../packages/teams-js
 
@@ -296,7 +296,7 @@ importers:
         specifier: ^18.2.0
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@microsoft/teams-js':
+      '@jevelin/bridge':
         specifier: workspace:*
         version: link:../../packages/teams-js
       '@types/node':
@@ -321,7 +321,7 @@ importers:
         specifier: ^17.0.1
         version: 17.0.2(react@17.0.2)
     devDependencies:
-      '@microsoft/teams-js':
+      '@jevelin/bridge':
         specifier: workspace:*
         version: link:../../packages/teams-js
 
@@ -337,13 +337,13 @@ importers:
         specifier: ^6.30.0
         version: 6.30.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
     devDependencies:
-      '@microsoft/teams-js':
+      '@jevelin/bridge':
         specifier: workspace:*
         version: link:../../packages/teams-js
 
   apps/tree-shaking-test-app:
     dependencies:
-      '@microsoft/teams-js':
+      '@jevelin/bridge':
         specifier: workspace:*
         version: link:../../packages/teams-js
     devDependencies:
@@ -364,7 +364,7 @@ importers:
         version: 5.97.1(webpack-cli@5.1.4)
       webpack-cli:
         specifier: ^5.1.4
-        version: 5.1.4(webpack-bundle-analyzer@4.10.2)(webpack-dev-server@5.2.3)(webpack@5.97.1)
+        version: 5.1.4(webpack-bundle-analyzer@4.10.2)(webpack-dev-server@5.2.3(webpack-cli@6.0.1)(webpack@5.104.1))(webpack@5.97.1)
 
   apps/typed-dependency-tester:
     dependencies:
@@ -372,7 +372,7 @@ importers:
         specifier: ^4.3.3
         version: 4.4.0
     devDependencies:
-      '@microsoft/teams-js':
+      '@jevelin/bridge':
         specifier: workspace:*
         version: link:../../packages/teams-js
       '@types/debug':
@@ -412,7 +412,7 @@ importers:
 
   tools/bundle-size-tools/bundle-analysis-app:
     dependencies:
-      '@microsoft/teams-js':
+      '@jevelin/bridge':
         specifier: workspace:*
         version: link:../../../packages/teams-js
 
@@ -2519,6 +2519,7 @@ packages:
 
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
+    deprecated: Potential CWE-502 - Update to 1.3.1 or higher
 
   '@webassemblyjs/ast@1.14.1':
     resolution: {integrity: sha512-nuBEDgQfm1ccRp/8bCQrx1frohyufl4JlbMMZ4P1wpeOfDhF6FQkxZJ1b/e+PLwr6X1Nhw6OLme5usuBWYBvuQ==}
@@ -10289,7 +10290,7 @@ snapshots:
   '@webpack-cli/configtest@2.1.1(webpack-cli@5.1.4)(webpack@5.97.1)':
     dependencies:
       webpack: 5.97.1(webpack-cli@5.1.4)
-      webpack-cli: 5.1.4(webpack-bundle-analyzer@4.10.2)(webpack-dev-server@5.2.3)(webpack@5.97.1)
+      webpack-cli: 5.1.4(webpack-bundle-analyzer@4.10.2)(webpack-dev-server@5.2.3(webpack-cli@6.0.1)(webpack@5.104.1))(webpack@5.97.1)
 
   '@webpack-cli/configtest@3.0.1(webpack-cli@6.0.1)(webpack@5.104.1)':
     dependencies:
@@ -10299,17 +10300,17 @@ snapshots:
   '@webpack-cli/info@2.0.2(webpack-cli@5.1.4)(webpack@5.97.1)':
     dependencies:
       webpack: 5.97.1(webpack-cli@5.1.4)
-      webpack-cli: 5.1.4(webpack-bundle-analyzer@4.10.2)(webpack-dev-server@5.2.3)(webpack@5.97.1)
+      webpack-cli: 5.1.4(webpack-bundle-analyzer@4.10.2)(webpack-dev-server@5.2.3(webpack-cli@6.0.1)(webpack@5.104.1))(webpack@5.97.1)
 
   '@webpack-cli/info@3.0.1(webpack-cli@6.0.1)(webpack@5.104.1)':
     dependencies:
       webpack: 5.104.1(webpack-cli@6.0.1)
       webpack-cli: 6.0.1(webpack-bundle-analyzer@4.10.2)(webpack-dev-server@5.2.3)(webpack@5.104.1)
 
-  '@webpack-cli/serve@2.0.5(webpack-cli@5.1.4)(webpack-dev-server@5.2.3)(webpack@5.97.1)':
+  '@webpack-cli/serve@2.0.5(webpack-cli@5.1.4)(webpack-dev-server@5.2.3(webpack-cli@6.0.1)(webpack@5.104.1))(webpack@5.97.1)':
     dependencies:
       webpack: 5.97.1(webpack-cli@5.1.4)
-      webpack-cli: 5.1.4(webpack-bundle-analyzer@4.10.2)(webpack-dev-server@5.2.3)(webpack@5.97.1)
+      webpack-cli: 5.1.4(webpack-bundle-analyzer@4.10.2)(webpack-dev-server@5.2.3(webpack-cli@6.0.1)(webpack@5.104.1))(webpack@5.97.1)
     optionalDependencies:
       webpack-dev-server: 5.2.3(webpack-cli@6.0.1)(webpack@5.104.1)
 
@@ -15906,12 +15907,12 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  webpack-cli@5.1.4(webpack-bundle-analyzer@4.10.2)(webpack-dev-server@5.2.3)(webpack@5.97.1):
+  webpack-cli@5.1.4(webpack-bundle-analyzer@4.10.2)(webpack-dev-server@5.2.3(webpack-cli@6.0.1)(webpack@5.104.1))(webpack@5.97.1):
     dependencies:
       '@discoveryjs/json-ext': 0.5.7
       '@webpack-cli/configtest': 2.1.1(webpack-cli@5.1.4)(webpack@5.97.1)
       '@webpack-cli/info': 2.0.2(webpack-cli@5.1.4)(webpack@5.97.1)
-      '@webpack-cli/serve': 2.0.5(webpack-cli@5.1.4)(webpack-dev-server@5.2.3)(webpack@5.97.1)
+      '@webpack-cli/serve': 2.0.5(webpack-cli@5.1.4)(webpack-dev-server@5.2.3(webpack-cli@6.0.1)(webpack@5.104.1))(webpack@5.97.1)
       colorette: 2.0.20
       commander: 10.0.1
       cross-spawn: 7.0.6
@@ -16077,7 +16078,7 @@ snapshots:
       watchpack: 2.4.1
       webpack-sources: 3.2.3
     optionalDependencies:
-      webpack-cli: 5.1.4(webpack-bundle-analyzer@4.10.2)(webpack-dev-server@5.2.3)(webpack@5.97.1)
+      webpack-cli: 5.1.4(webpack-bundle-analyzer@4.10.2)(webpack-dev-server@5.2.3(webpack-cli@6.0.1)(webpack@5.104.1))(webpack@5.97.1)
     transitivePeerDependencies:
       - '@swc/core'
       - esbuild

@@ -1,4 +1,4 @@
-import { externalAppCommands } from '@microsoft/teams-js';
+import { externalAppCommands } from '@jevelin/bridge';
 import React from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from '../utils';

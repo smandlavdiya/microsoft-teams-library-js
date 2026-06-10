@@ -1,4 +1,4 @@
-import { SdkError, thirdPartyCloudStorage } from '@microsoft/teams-js';
+import { SdkError, thirdPartyCloudStorage } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithTextInput } from './utils';

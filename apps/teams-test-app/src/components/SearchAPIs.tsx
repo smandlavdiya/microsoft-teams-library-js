@@ -1,4 +1,4 @@
-import { search } from '@microsoft/teams-js';
+import { search } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput } from './utils';

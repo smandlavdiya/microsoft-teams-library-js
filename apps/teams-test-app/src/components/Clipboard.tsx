@@ -1,4 +1,4 @@
-import { clipboard } from '@microsoft/teams-js';
+import { clipboard } from '@jevelin/bridge';
 import React from 'react';
 
 import { noHostSdkMsg } from '../App';

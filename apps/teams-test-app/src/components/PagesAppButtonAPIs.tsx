@@ -3,7 +3,7 @@ import {
   registerAppButtonClickHandler,
   registerAppButtonHoverEnterHandler,
   registerAppButtonHoverLeaveHandler,
-} from '@microsoft/teams-js';
+} from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput } from './utils';

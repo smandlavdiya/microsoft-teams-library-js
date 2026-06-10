@@ -1,4 +1,4 @@
-import { profile } from '@microsoft/teams-js';
+import { profile } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from './utils';

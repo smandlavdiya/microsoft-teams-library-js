@@ -1,4 +1,4 @@
-import { meetingRoom } from '@microsoft/teams-js';
+import { meetingRoom } from '@jevelin/bridge';
 import React from 'react';
 
 import { generateRegistrationMsg } from '../../App';

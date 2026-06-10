@@ -1,4 +1,4 @@
-import { mail } from '@microsoft/teams-js';
+import { mail } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from './utils';

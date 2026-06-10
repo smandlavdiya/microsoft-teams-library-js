@@ -1,14 +1,14 @@
 {
-  "name": "@microsoft/teams-js",
-  "author": "Microsoft Teams",
+  "name": "@jevelin/bridge",
+  "author": "Jevelin",
   "version": "2.53.0",
-  "description": "Microsoft Client SDK for building app for Microsoft hosts",
+  "description": "JevelinBridge SDK for building apps",
   "repository": {
     "directory": "packages/teams-js",
     "type": "git",
     "url": "https://github.com/OfficeDev/microsoft-teams-library-js"
   },
-  "main": "./dist/umd/MicrosoftTeams.min.js",
+  "main": "./dist/umd/JevelinBridge.min.js",
   "typings": "./dist/esm/packages/teams-js/dts/index.d.ts",
   "module": "./dist/esm/packages/teams-js/src/index.js",
   "scripts": {

@@ -1,6 +1,6 @@
 import './App.css';
 
-import { app } from '@microsoft/teams-js';
+import { app } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import AppInitialization from './components/AppInitialization';

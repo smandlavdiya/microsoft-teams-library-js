@@ -1,4 +1,4 @@
-import { registerCustomHandler, sendCustomMessage } from '@microsoft/teams-js';
+import { registerCustomHandler, sendCustomMessage } from '@jevelin/bridge';
 import React from 'react';
 
 import { ApiWithoutInput } from './utils';

@@ -9,7 +9,7 @@ builder.Services.AddServerSideBlazor();
 
 var config = builder.Configuration.Get<ConfigOptions>();
 builder.Services.AddTeamsFx(config.TeamsFx.Authentication);
-builder.Services.AddScoped<MicrosoftTeams>();
+builder.Services.AddScoped<JevelinBridge>();
 
 builder.Services.AddControllers();
 builder.Services.AddHttpClient("WebClient", client => client.Timeout = TimeSpan.FromSeconds(600));

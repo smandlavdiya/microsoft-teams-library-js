@@ -1,4 +1,4 @@
-import { notifications, NotificationTypes, ShowNotificationParameters } from '@microsoft/teams-js';
+import { notifications, NotificationTypes, ShowNotificationParameters } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from '../utils';

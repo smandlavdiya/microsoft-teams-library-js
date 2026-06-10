@@ -1,4 +1,4 @@
-import { logs } from '@microsoft/teams-js';
+import { logs } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { generateRegistrationMsg } from '../App';

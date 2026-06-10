@@ -1,4 +1,4 @@
-import { navigateBack, pages, registerBackButtonHandler } from '@microsoft/teams-js';
+import { navigateBack, pages, registerBackButtonHandler } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput } from './utils';

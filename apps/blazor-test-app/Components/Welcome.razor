@@ -1,6 +1,6 @@
 ﻿@using Microsoft.Extensions.Configuration
 @using Microsoft.AspNetCore.Hosting
-@inject MicrosoftTeams MicrosoftTeams
+@inject JevelinBridge JevelinBridge
 @inject IWebHostEnvironment HostEnvironment
 @inject IConfiguration Configuration
 @inject NavigationManager MyNavigationManager
@@ -36,11 +36,11 @@ else
             isLoading = false;
             StateHasChanged();
 
-            IsHostedInM365 = await MicrosoftTeams.IsHostedInM365();
+            IsHostedInM365 = await JevelinBridge.IsHostedInM365();
 
             if (IsHostedInM365) {
-                await MicrosoftTeams.InitializeAsync();
-                await MicrosoftTeams.notifySuccess();
+                await JevelinBridge.InitializeAsync();
+                await JevelinBridge.notifySuccess();
             }
 
         }

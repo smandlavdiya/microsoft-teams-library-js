@@ -1,4 +1,4 @@
-import { remoteCamera, SdkError } from '@microsoft/teams-js';
+import { remoteCamera, SdkError } from '@jevelin/bridge';
 import React from 'react';
 
 import { generateRegistrationMsg } from '../App';

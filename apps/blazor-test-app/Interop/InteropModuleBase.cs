@@ -33,7 +33,7 @@ public abstract class InteropModuleBase
     {
         if (_module == null)
         {
-            _ = await ImportPrerequisiteModuleAsync("./js/MicrosoftTeams.min.js");
+            _ = await ImportPrerequisiteModuleAsync("./js/JevelinBridge.min.js");
             _module = await _jsRuntime.InvokeAsync<IJSObjectReference>("import", ModulePath).AsTask();
         }
 

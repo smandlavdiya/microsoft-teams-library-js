@@ -1,4 +1,4 @@
-import { monetization, SdkError } from '@microsoft/teams-js';
+import { monetization, SdkError } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { noHostSdkMsg } from '../../App';

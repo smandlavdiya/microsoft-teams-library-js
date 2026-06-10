@@ -1,4 +1,4 @@
-import { shortcutRelay } from '@microsoft/teams-js';
+import { shortcutRelay } from '@jevelin/bridge';
 import React from 'react';
 
 import { ApiWithoutInput } from './utils';

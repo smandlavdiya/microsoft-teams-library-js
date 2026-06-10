@@ -1,4 +1,4 @@
-import { pages, TeamInstanceParameters, teams } from '@microsoft/teams-js';
+import { pages, TeamInstanceParameters, teams } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from '../utils';

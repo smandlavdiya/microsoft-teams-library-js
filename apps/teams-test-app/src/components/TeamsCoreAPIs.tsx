@@ -6,7 +6,7 @@ import {
   registerBeforeUnloadHandler,
   registerOnLoadHandler,
   teamsCore,
-} from '@microsoft/teams-js';
+} from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from './utils';

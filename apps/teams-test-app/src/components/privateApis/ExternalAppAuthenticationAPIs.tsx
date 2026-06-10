@@ -1,4 +1,4 @@
-import { externalAppAuthentication, UUID } from '@microsoft/teams-js';
+import { externalAppAuthentication, UUID } from '@jevelin/bridge';
 import React from 'react';
 
 import { ApiWithoutInput } from '../utils/ApiWithoutInput';

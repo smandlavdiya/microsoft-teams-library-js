@@ -1,4 +1,4 @@
-import { nestedAppAuth } from '@microsoft/teams-js';
+import { nestedAppAuth } from '@jevelin/bridge';
 import React, { ReactElement, useState } from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from './utils';

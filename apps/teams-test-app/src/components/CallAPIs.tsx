@@ -1,4 +1,4 @@
-import { call } from '@microsoft/teams-js';
+import { call } from '@jevelin/bridge';
 import React from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from './utils';

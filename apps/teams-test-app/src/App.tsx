@@ -1,6 +1,6 @@
 import './App.css';
 
-import { app, appInitialization, initialize, ResumeContext } from '@microsoft/teams-js';
+import { app, appInitialization, initialize, ResumeContext } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 

@@ -1,3 +1,3 @@
-import { geoLocation } from '@microsoft/teams-js';
+import { geoLocation } from '@jevelin/bridge';
 geoLocation.requestPermission();
 geoLocation.map.isSupported();

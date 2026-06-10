@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable no-useless-catch */
-import { AppId, store } from '@microsoft/teams-js';
+import { AppId, store } from '@jevelin/bridge';
 import { ReactElement } from 'react';
 import React from 'react';
 

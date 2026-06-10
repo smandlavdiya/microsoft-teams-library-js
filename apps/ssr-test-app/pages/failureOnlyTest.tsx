@@ -1,4 +1,4 @@
-import * as microsoftTeams from '@microsoft/teams-js';
+import * as JevelinBridge from '@jevelin/bridge';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import React, { ReactElement, useEffect, useState } from 'react';
@@ -20,8 +20,8 @@ export default function FailureOnlyTestPage(props: FailureOnlyTestPageProps): Re
   const [clientTime, setClientTime] = useState('');
 
   useEffect(() => {
-    microsoftTeams.app.initialize().then(() => {
-      microsoftTeams.app.getContext().then((ctx) => {
+    JevelinBridge.app.initialize().then(() => {
+      JevelinBridge.app.getContext().then((ctx) => {
         setTeamsContext(ctx);
       });
 
@@ -31,10 +31,10 @@ export default function FailureOnlyTestPage(props: FailureOnlyTestPageProps): Re
           ? 'Bearer realm="", authorization_uri="https://some_url/authorize", error="insufficient_claims", claims="Base64Encoded_claims_value"'
           : '';
         const request = {
-          reason: microsoftTeams.app.FailedReason.AuthFailed,
+          reason: JevelinBridge.app.FailedReason.AuthFailed,
           authHeader: message,
         };
-        microsoftTeams.app.notifyFailure(request);
+        JevelinBridge.app.notifyFailure(request);
       }
       setClientTime(JSON.stringify(new Date()));
     });

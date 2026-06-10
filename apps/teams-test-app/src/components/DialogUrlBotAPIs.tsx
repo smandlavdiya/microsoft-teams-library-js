@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-types */
-import { BotUrlDialogInfo, dialog, DialogInfo, IAppWindow, tasks } from '@microsoft/teams-js';
+import { BotUrlDialogInfo, dialog, DialogInfo, IAppWindow, tasks } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from './utils';

@@ -6,7 +6,7 @@
   "version": "0.0.1",
   "scripts": {
     "build": "pnpm i && pnpm copy && cd ./types && pnpm tsc && cd ../ && pnpm clean",
-    "copy": "mkdir types && cp -R ./node_modules/@microsoft/teams-js/dist/esm/packages/teams-js/dts/* ./types || xcopy .\\node_modules\\@microsoft\\teams-js\\dist\\esm\\packages\\teams-js\\dts\\* .\\types /Y /E",
+    "copy": "mkdir types && cp -R ./node_modules/@jevelin/bridge/dist/esm/packages/teams-js/dts/* ./types || xcopy .\\node_modules\\@microsoft\\teams-js\\dist\\esm\\packages\\teams-js\\dts\\* .\\types /Y /E",
     "clean": "rimraf node_modules && rimraf ./types"
   },
   "dependencies": {
@@ -14,6 +14,6 @@
   },
   "devDependencies": {
     "@types/debug": "^4.1.7",
-    "@microsoft/teams-js": "workspace:*"
+    "@jevelin/bridge": "workspace:*"
   }
 }

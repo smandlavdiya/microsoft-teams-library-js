@@ -1,4 +1,4 @@
-import { FileOpenPreference, files, SdkError } from '@microsoft/teams-js';
+import { FileOpenPreference, files, SdkError } from '@jevelin/bridge';
 import React, { ChangeEvent, ReactElement } from 'react';
 
 import { noHostSdkMsg } from '../../App';

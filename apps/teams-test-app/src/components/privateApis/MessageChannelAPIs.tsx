@@ -1,4 +1,4 @@
-import { messageChannels } from '@microsoft/teams-js';
+import { messageChannels } from '@jevelin/bridge';
 import React from 'react';
 
 import { ApiWithoutInput } from '../utils';

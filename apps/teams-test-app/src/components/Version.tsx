@@ -1,4 +1,4 @@
-import { version } from '@microsoft/teams-js';
+import { version } from '@jevelin/bridge';
 import React from 'react';
 
 const Version = (): React.ReactElement => (

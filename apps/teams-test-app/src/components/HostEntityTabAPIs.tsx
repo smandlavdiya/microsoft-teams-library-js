@@ -1,4 +1,4 @@
-import { hostEntity } from '@microsoft/teams-js';
+import { hostEntity } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from './utils';

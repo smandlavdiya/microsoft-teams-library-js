@@ -1,4 +1,4 @@
-import { SdkError, stageView } from '@microsoft/teams-js';
+import { SdkError, stageView } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from './utils';

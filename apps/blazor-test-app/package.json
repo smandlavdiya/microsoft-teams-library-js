@@ -9,6 +9,6 @@
     "start": "dotnet run"
   },
   "devDependencies": {
-    "@microsoft/teams-js": "workspace:*"
+    "@jevelin/bridge": "workspace:*"
   }
 }

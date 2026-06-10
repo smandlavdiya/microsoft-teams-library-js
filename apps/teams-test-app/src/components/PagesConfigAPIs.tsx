@@ -1,4 +1,4 @@
-import { pages, registerChangeSettingsHandler, settings } from '@microsoft/teams-js';
+import { pages, registerChangeSettingsHandler, settings } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { noHostSdkMsg } from '../App';

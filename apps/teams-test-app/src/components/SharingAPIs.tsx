@@ -1,4 +1,4 @@
-import { SdkError, sharing } from '@microsoft/teams-js';
+import { SdkError, sharing } from '@jevelin/bridge';
 import React, { ReactElement } from 'react';
 
 import { ApiWithoutInput, ApiWithTextInput } from './utils';
