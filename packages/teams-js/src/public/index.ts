@@ -95,6 +95,7 @@ export { ValidatedSafeString } from './validatedSafeString';
 export { version } from './version';
 export * as visualMedia from './visualMedia/visualMedia';
 export * as webStorage from './webStorage';
+export * as offlineStorage from './offlineStorage/offlineStorage';
 export * as call from './call';
 export * as appInitialization from './appInitialization';
 export * as thirdPartyCloudStorage from './thirdPartyCloudStorage';

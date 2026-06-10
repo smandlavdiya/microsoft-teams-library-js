@@ -321,6 +321,13 @@ interface IRuntimeV4 extends IBaseRuntime {
     };
     readonly webStorage?: {};
     readonly widgetHosting?: {};
+    readonly offlineStorage?: {
+      readonly drafts?: {};
+      readonly inbox?: {};
+      readonly outbox?: {};
+      readonly sent?: {};
+      readonly sync?: {};
+    };
   };
 }
 // Constant used to set the runtime configuration
