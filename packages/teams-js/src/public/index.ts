@@ -96,6 +96,7 @@ export { version } from './version';
 export * as visualMedia from './visualMedia/visualMedia';
 export * as webStorage from './webStorage';
 export * as offlineStorage from './offlineStorage/offlineStorage';
+export * as security from './security';
 export * as call from './call';
 export * as appInitialization from './appInitialization';
 export * as thirdPartyCloudStorage from './thirdPartyCloudStorage';
