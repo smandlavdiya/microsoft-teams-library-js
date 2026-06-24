@@ -6,12 +6,12 @@
  * @module
  */
 
-import { sendAndHandleSdkError, sendAndUnwrap } from '../../internal/communication';
+import { sendAndUnwrap } from '../../internal/communication';
 import { ensureInitialized } from '../../internal/internalAPIs';
 import { ApiName, ApiVersionNumber, getApiVersionTag } from '../../internal/telemetry';
 import { errorNotSupportedOnPlatform, FrameContexts } from '../constants';
 import { runtime } from '../runtime';
-import { OfflineRecord, QueryOptions, PaginatedResult } from './offlineStorage';
+import { OfflineRecord, PaginatedResult, QueryOptions } from './offlineStorage';
 
 /**
  * v2 APIs telemetry file: All of APIs in this capability file should send out API version v2 ONLY

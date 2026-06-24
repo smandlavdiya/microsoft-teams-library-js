@@ -110,10 +110,7 @@ export async function isBiometricAvailable(): Promise<BiometricAvailability> {
     throw errorNotSupportedOnPlatform;
   }
 
-  const apiVersionTag = getApiVersionTag(
-    securityTelemetryVersionNumber,
-    'security.isBiometricAvailable' as ApiName,
-  );
+  const apiVersionTag = getApiVersionTag(securityTelemetryVersionNumber, 'security.isBiometricAvailable' as ApiName);
 
   return sendAndUnwrap<BiometricAvailability>(apiVersionTag, 'security.isBiometricAvailable');
 }

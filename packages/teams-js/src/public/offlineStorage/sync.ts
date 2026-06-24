@@ -200,11 +200,7 @@ export function setConflictStrategy(schemaId: string, strategy: ConflictStrategy
  *
  * @beta
  */
-export function resolveConflict(
-  schemaId: string,
-  recordId: string,
-  resolution: 'client' | 'server',
-): Promise<void> {
+export function resolveConflict(schemaId: string, recordId: string, resolution: 'client' | 'server'): Promise<void> {
   ensureInitialized(runtime, FrameContexts.content, FrameContexts.task);
   if (!isSupported()) {
     throw errorNotSupportedOnPlatform;

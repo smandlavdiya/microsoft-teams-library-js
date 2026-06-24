@@ -11,7 +11,16 @@ import { ensureInitialized } from '../../internal/internalAPIs';
 import { ApiName, ApiVersionNumber, getApiVersionTag } from '../../internal/telemetry';
 import { errorNotSupportedOnPlatform, FrameContexts } from '../constants';
 import { runtime } from '../runtime';
-import { OfflineRecord, QueryOptions, PaginatedResult } from './offlineStorage';
+import { OfflineRecord, PaginatedResult, QueryOptions } from './offlineStorage';
+
+/**
+ * Result returned when a new draft record is created.
+ * @beta
+ */
+export interface DraftCreateResult {
+  /** The generated unique identifier for the created draft record. */
+  id: string;
+}
 
 /**
  * v2 APIs telemetry file: All of APIs in this capability file should send out API version v2 ONLY
@@ -30,7 +39,7 @@ const draftsTelemetryVersionNumber: ApiVersionNumber = ApiVersionNumber.V_2;
  *
  * @beta
  */
-export function create(schemaId: string, data: Record<string, unknown>): Promise<{ id: string }> {
+export function create(schemaId: string, data: Record<string, unknown>): Promise<DraftCreateResult> {
   ensureInitialized(runtime, FrameContexts.content, FrameContexts.task);
   if (!isSupported()) {
     throw errorNotSupportedOnPlatform;

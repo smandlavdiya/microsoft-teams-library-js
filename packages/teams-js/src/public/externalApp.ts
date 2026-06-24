@@ -9,7 +9,7 @@
  * @module
  */
 
-import { sendAndUnwrap, sendMessageToParentAsync } from '../internal/communication';
+import { sendAndUnwrap } from '../internal/communication';
 import { ensureInitialized } from '../internal/internalAPIs';
 import { ApiName, ApiVersionNumber, getApiVersionTag } from '../internal/telemetry';
 import { errorNotSupportedOnPlatform } from './constants';
@@ -73,6 +73,7 @@ export interface ExternalAppResult {
  * Result from checking if an app is installed.
  */
 export interface ExternalAppInstalledResult {
+  /** Whether the target app is currently installed on the user's device. */
   installed: boolean;
 }
 
